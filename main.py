@@ -5,6 +5,15 @@ from math import sqrt
 
 def isprime(p):
 
+    if p<2: 
+        return False
+    d = int(sqrt(p))
+    for i in range(2, d+1):
+        if p%i==0:
+            return False
+        break
+    else: 
+        return True
     # votre code ici
 
     pass
